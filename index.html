@@ -17,6 +17,7 @@
     color="#111">
 
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
   <script
@@ -2502,8 +2503,9 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   const name = encodeURIComponent(this.name.value);
   const email = encodeURIComponent(this.email.value);
   const message = encodeURIComponent(this.message.value);
+  subject= `Message from Portfolio by ${name} : ${email}`
   // Create the URL with query parameters
-  const url = `https://example.com/api/submit?recipient=omchaurasia272301up@gmail.com&subject=${email}`;
+  const url = `https://script.google.com/macros/s/AKfycbyn5SmxWN0P5cK5dhYKvCnnZL6-usjAgNN1zrvxCUJKPFJCAATvMslN6bbtEF-SyS3I/exec?recipient=omchaurasia272301up@gmail.com&subject=${subject}&body=${message}`;
 
   // Perform a fetch request with the GET method
   fetch(url)
@@ -2514,10 +2516,16 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       return response.json();
     })
     .then(data => {
+    Swal.fire({
+  title: "Thank You!",
+  text: "We have received your message and will get back to you shortly.",
+  icon: "success"
+});
       console.log('Success:', data);
       // Handle success (e.g., show a message or redirect)
     })
     .catch(error => {
+    alert("Error")
       console.error('Error:', error);
       // Handle error (e.g., show an error message)
     });
