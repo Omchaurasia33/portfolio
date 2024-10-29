@@ -2493,7 +2493,38 @@
     //# sourceURL=pen.js
   </script>
 
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
 
+  // Get the values from the input fields
+  const name = encodeURIComponent(this.name.value);
+  const email = encodeURIComponent(this.email.value);
+  const message = encodeURIComponent(this.message.value);
+  // Create the URL with query parameters
+  const url = `https://example.com/api/submit?recipient=omchaurasia272301up@gmail.com&subject=${email}`;
+
+  // Perform a fetch request with the GET method
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Success:', data);
+      // Handle success (e.g., show a message or redirect)
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // Handle error (e.g., show an error message)
+    });
+});
+  
+  
+</script>
 
 
 
