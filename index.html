@@ -2391,18 +2391,7 @@
           },
 
             ' ', /*#__PURE__*/
-            React.createElement("i", { className: "fab fa-github" })), /*#__PURE__*/
-
-          React.createElement("a", {
-            href: "https://codepen.io/yagoestevez",
-            target: "_blank",
-            rel: "noopener noreferrer",
-            title: "Link to author's Codepen Profile"
-          },
-
-            ' ', /*#__PURE__*/
-            React.createElement("i", { className: "fab fa-codepen" }))));
-
+            React.createElement("i", { className: "fab fa-github" }))
 
 
     };
@@ -2525,7 +2514,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       // Handle success (e.g., show a message or redirect)
     })
     .catch(error => {
-    alert("Error")
+    Swal.fire({
+  title: "Oops!",
+  text: "Something went wrong. Please try again later.",
+  icon: "error"
+});
+
       console.error('Error:', error);
       // Handle error (e.g., show an error message)
     });
