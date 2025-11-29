@@ -1,0 +1,70 @@
+OM CHAURASIA
+Asalfa, Mumbai, Maharashtra, India
+📧 omchaurasia272301up@gmail.com | 📞 +91-7309370691
+🔗 https://www.linkedin.com/in/om-chaurasia-9ba2a6209/
+🌐 https://portfolio-8qe.pages.dev/
+SUMMARY
+Creative and detail-oriented Full-Stack Developer with 3+ years of experience in building dynamic, scalable web applications and automating digital workflows. Specializes in frontend development with React.js, GIS integration, and AI/LLM tools. Adept in frameworks like Django, Flask, and technologies including PostgreSQL, Docker, and LangChain. Passionate about exploring new tech breakthroughs, coding innovative solutions, and crafting impactful user experiences through design, prototyping, and video walkthroughs.
+TECHNICAL SKILLS
+Languages: HTML5, CSS3, JavaScript, Python, PHP, Java, JSON, XML
+Frameworks & Libraries: React.js, Django, Flask, FastAPI, Bootstrap, Tailwind CSS, Material UI, Ant Design, jQuery, Three.js, WordPress
+GIS Tools: Leaflet, OpenLayers, GeoServer, PostGIS
+Databases: PostgreSQL, MySQL, MongoDB, Firebase
+AI & Automation: LangChain, Gemini API, Docker, N8N, TensorFlow, PyAutoGUI, OpenCV
+Design & Media: Figma, PowerPoint, AI Voice Tools (text-to-speech), video walkthroughs
+Others: Git, Google Apps Script, Selenium, Pandas, NumPy, Directus CMS
+PROFESSIONAL EXPERIENCE
+Software Developer
+Bhugol GIS Private Limited, Mumbai — Nov 2024 – Present
+Developed scalable web applications and GIS-integrated dashboards using React, Django, and PostgreSQL.
+Integrated Leaflet, OpenLayers, and GeoServer for spatial data visualization and smart city solutions.
+Built AI prototypes using LangChain, Gemini API, Docker, and N8N to automate workflows and enhance data processing.
+Designed UI/UX using Material UI, Ant Design, Tailwind CSS, and Figma; created AI-powered video walkthroughs and voice-over presentations for end-users and stakeholders.
+Prompt Engineer – LLM Training & AI Automation
+Outlier (US-based AI Company) — Remote | Jan 2025 – Present
+Developed advanced prompt engineering techniques to train and fine-tune large language models (LLMs).
+Contributed to hackathon-winning AI projects by building Dockerized pipelines and orchestrating workflows using N8N.
+Google Apps Script Engineer
+Design Horse, Mumbai — June 2024 – October 2024
+Automated business workflows and reporting in Google Workspace using Apps Script for Sheets, Docs, and Gmail.
+WordPress Website Developer (Freelance)
+Satguru Infocom Pvt. Ltd. — May 2024 – June 2024
+Customized responsive WordPress websites with SEO optimization and plugin integration.
+Accounts Executive
+Pink & White, Mumbai — Nov 2023 – Apr 2024
+Managed financial ledgers, reconciliations, and invoices ensuring accuracy and compliance.
+US IT Recruiter
+MSR Cosmos LLC, Noida — Jan 2022 – Dec 2022
+Led end-to-end recruitment processes, documentation, and client coordination for US IT staffing.
+PROJECTS
+GRAM ESMS – Metro Line 4/4A (BGISCP005)
+Led portal development for social & environmental monitoring integrating GIS, health & safety, and training modules with JWT auth and PostgreSQL.
+MMRCL GeoPortal – PMIS Dashboard (POC)
+Integrated frontend and backend GIS asset tracking with React, Leaflet/OpenLayers, and optimized real-time map rendering.
+Nashik Smart City GIS (BGISSM011)
+Integrated SCADA dashboards and optimized real-time CCTV rendering with secure async data handling in React.
+Wayfinder App & Dashboard (BGISBD008)
+Developed interactive metro navigation UI with filters, live gate/lift monitoring, analytics, and AI voice-over video walkthroughs.
+Asset Management System (BGISCP012)
+Built centralized stock and asset assignment tool with role-based access using React UI and FastAPI backend.
+AI/LLM R&D (RND-2025)
+Researched LangChain, Gemini API, LLaMA offline setups, and built AI agent pipelines with Docker and N8N automation.
+Bhugol GIS Website Prototype
+Designed responsive and scalable prototype focusing on speed, user experience, and modern GIS service showcases.
+PROJECT-BASED SKILLS & CERTIFICATIONS
+UI & Design: React.js, Material UI, Tailwind CSS, Ant Design, Figma
+GIS Integration: Leaflet, OpenLayers, GeoServer, PostGIS
+Backend & Auth: Django, Flask, FastAPI, PostgreSQL, JWT Authentication
+AI & Automation: LangChain, Gemini API, LLM prompt engineering, Docker, N8N
+Workflow Automation: Google Apps Script, automation bots
+Media Presentation: PowerPoint, AI voice-over tools, video walkthroughs
+Certifications:
+Tally Prime – STP Computer Education
+Android Development – Techpile Technology Pvt. Ltd.
+EDUCATION
+Computer Science & Engineering
+Chhatrapati Shahu Ji Maharaj Government Polytechnic, Ambedkar Nagar
+July 2019 – Sept 2022
+Secondary Education
+Little Flower School, Kalwari, Basti
+May 2018 – Apr 2019

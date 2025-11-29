@@ -967,8 +967,214 @@
 
 
 
+    /*****************
+ *****************
+   SKILLS STYLES
+ *****************
+ *****************/
+
+    #skills {
+      min-height: 100vh;
+      font-size: 1.4rem;
+      position: relative;
+      background: #181d23;
+      color: #fafafa;
+      padding: 10rem 5rem 8rem;
+      margin-top: -10rem;
+      z-index: 2;
+      -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+      clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+    }
+
+    #skills .skills-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    #skills .heading .title {
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+    }
+
+    #skills .heading .separator {
+      background: #f300b4;
+      width: 150px;
+      height: 2px;
+      margin: 1rem auto;
+    }
+
+    #skills .heading .subtitle {
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 1rem 0 3rem;
+    }
+
+    #skills .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    #skills .skill-category {
+      background: #202736aa;
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 3px solid #f300b4;
+      transition: transform 200ms, box-shadow 200ms;
+    }
+
+    #skills .skill-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px -10px #f300b4;
+    }
+
+    #skills .skill-category h4 {
+      font-size: 1.6rem;
+      color: #f300b4;
+      margin-bottom: 1rem;
+    }
+
+    #skills .skill-category ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #skills .skill-category li {
+      padding: 0.5rem 0;
+      color: #fafafa;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+
+    #skills .skill-category li::before {
+      content: "▹ ";
+      color: #f300b4;
+      font-weight: bold;
+      padding-right: 0.5rem;
+    }
+
+    @media only screen and (max-width: 649px) {
+      #skills {
+        padding: 8rem 2rem 6rem;
+        -webkit-clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+        clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+      }
+    }
 
 
+    /*****************
+ *****************
+ EXPERIENCE STYLES
+ *****************
+ *****************/
+
+    #experience {
+      min-height: 100vh;
+      font-size: 1.4rem;
+      position: relative;
+      background: #f0f0f0;
+      padding: 10rem 5rem 8rem;
+      margin-top: -10rem;
+      z-index: 1;
+    }
+
+    #experience .experience-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    #experience .heading .title {
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+    }
+
+    #experience .heading .separator {
+      background: #f300b4;
+      width: 150px;
+      height: 2px;
+      margin: 1rem auto;
+    }
+
+    #experience .heading .subtitle {
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 1rem 0 3rem;
+    }
+
+    #experience .experience-item {
+      background: #ffffff;
+      padding: 2.5rem;
+      margin: 2rem 0;
+      border-left: 4px solid #f300b4;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 200ms, box-shadow 200ms;
+    }
+
+    #experience .experience-item:hover {
+      transform: translateX(5px);
+      box-shadow: 0 5px 20px rgba(243, 0, 180, 0.2);
+    }
+
+    #experience .experience-item .job-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #252934;
+      margin-bottom: 0.5rem;
+    }
+
+    #experience .experience-item .company {
+      font-size: 1.5rem;
+      color: #f300b4;
+      margin-bottom: 0.5rem;
+    }
+
+    #experience .experience-item .duration {
+      font-size: 1.2rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    #experience .experience-item .description {
+      color: #555;
+      line-height: 1.8rem;
+    }
+
+    #experience .experience-item .description li {
+      margin: 0.5rem 0;
+    }
+
+    #experience .clients-highlight {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f300b4 0%, #252934 100%);
+      color: #fafafa;
+      border-radius: 8px;
+    }
+
+    #experience .clients-highlight h4 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    #experience .clients-highlight p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+
+    @media only screen and (max-width: 649px) {
+      #experience {
+        padding: 8rem 2rem 6rem;
+      }
+
+      #experience .experience-item {
+        padding: 1.5rem;
+      }
+    }
 
 
 
@@ -1378,6 +1584,8 @@
         <ul>
           <li><a href="#welcome-section">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
           <li><a href="#projects">PORTFOLIO</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
@@ -1432,6 +1640,16 @@
             <p></p>
           </div>
         </article>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="skills-container">
+        <!-- Skills content will be rendered by React -->
+      </div>
+    </section>
+    <section id="experience">
+      <div class="experience-container">
+        <!-- Experience content will be rendered by React -->
       </div>
     </section>
     <section id="projects">
@@ -1770,6 +1988,16 @@
 
 
               React.createElement("li", null, /*#__PURE__*/
+                React.createElement("a", { href: "#skills", onClick: props.toggleMenu }, "SKILLS")), /*#__PURE__*/
+
+
+
+              React.createElement("li", null, /*#__PURE__*/
+                React.createElement("a", { href: "#experience", onClick: props.toggleMenu }, "EXPERIENCE")), /*#__PURE__*/
+
+
+
+              React.createElement("li", null, /*#__PURE__*/
                 React.createElement("a", { href: "#projects", onClick: props.toggleMenu }, "PORTFOLIO")), /*#__PURE__*/
 
 
@@ -1860,10 +2088,10 @@
 
               React.createElement("div", { className: "desc full" }, /*#__PURE__*/
                 React.createElement("h4", { className: "subtitle" }, "My name is Om Chaurasia."), /*#__PURE__*/
-                React.createElement("p", null, "I’m a web developer and programmer based in the vibrant city of Mumbai."), /*#__PURE__*/
+                React.createElement("p", null, "I'm a Full-Stack Developer with 3+ years of experience building dynamic, scalable web applications and automating digital workflows based in Mumbai, India."), /*#__PURE__*/
 
 
-                React.createElement("p", null, "I love turning challenges into clean, functional websites while streamlining processes through efficient code. Always hungry to learn more, I’m passionate about problem-solving and staying ahead with the latest in web development technologies. With my tech skills, I bring both innovation and precision to everything I do.")), /*#__PURE__*/
+                React.createElement("p", null, "Creative and detail-oriented professional specializing in frontend development with React.js, GIS integration, and AI/LLM tools. I've worked with prestigious clients including MMRCL (Mumbai Metro Rail Corporation), Nashik Smart City, and various government projects. Passionate about exploring new tech breakthroughs, coding innovative solutions, and crafting impactful user experiences through design, prototyping, and interactive visualizations.")), /*#__PURE__*/
 
 
 
@@ -1876,26 +2104,26 @@
                 React.createElement("p", { className: "separator" })), /*#__PURE__*/
 
               React.createElement("div", { className: "desc" }, /*#__PURE__*/
-                React.createElement("h4", { className: "subtitle" }, "I'm a programmer."), /*#__PURE__*/
-                React.createElement("p", null, "I specialize in developing innovative solutions using languages like Python and JavaScript. I create dynamic applications, automate workflows with Google Apps Script, and build projects like voice-command assistants and video calling platforms, focusing on functionality and user experience."), /*#__PURE__*/
+                React.createElement("h4", { className: "subtitle" }, "Full-Stack Development \u0026 GIS Integration"), /*#__PURE__*/
+                React.createElement("p", null, "I develop scalable web applications using React.js, Django, Flask, and FastAPI with PostgreSQL databases. Specialized in GIS-integrated dashboards using Leaflet, OpenLayers, and GeoServer for spatial data visualization in smart city solutions."), /*#__PURE__*/
 
 
 
 
-                React.createElement("p", null, "As a backend developer, I focus on building robust server-side applications and APIs using Python frameworks like Flask and Django. I manage databases such as MySQL and MongoDB, ensuring data integrity and efficient retrieval, while optimizing application performance and security for seamless user experiences.")), /*#__PURE__*/
+                React.createElement("p", null, "Expert in building AI prototypes using LangChain, Gemini API, Docker, and N8N to automate workflows. I design modern UI/UX with Material UI, Ant Design, Tailwind CSS, and Figma, creating AI-powered video walkthroughs and presentations for stakeholders.")), /*#__PURE__*/
 
 
 
 
               React.createElement("div", { className: "desc" }, /*#__PURE__*/
-                React.createElement("h4", { className: "subtitle" }, "Also a web designer."), /*#__PURE__*/
-                React.createElement("p", null, " I excel in crafting visually appealing, user-friendly websites using HTML, CSS, and frameworks like Bootstrap and React. I prioritize responsive design and SEO, ensuring optimal performance while enhancing user interaction and satisfaction through thoughtful layouts and functionality."), /*#__PURE__*/
+                React.createElement("h4", { className: "subtitle" }, "AI \u0026 Automation Specialist"), /*#__PURE__*/
+                React.createElement("p", null, "Currently working as Prompt Engineer for LLM Training \u0026 AI Automation at Outlier (US-based AI Company), developing advanced prompt engineering techniques to train and fine-tune large language models."), /*#__PURE__*/
 
 
 
 
 
-                React.createElement("p", null, "As a WordPress web designer, I create and customize dynamic websites tailored to client needs, enhancing user experience through responsive designs and performance optimization. I leverage PHP for custom functionalities, integrate essential plugins, implement SEO best practices, and ensure site functionality to drive engagement and visibility."))))));
+                React.createElement("p", null, "Experienced in Google Apps Script automation, WordPress development, and creating innovative solutions for business workflow optimization. Contributed to hackathon-winning AI projects with Dockerized pipelines and N8N orchestration."))))));
 
 
 
@@ -1904,6 +2132,119 @@
 
 
 
+
+
+    };
+
+
+    /***********************
+      Skills Component
+     ***********************/
+
+    const Skills = props => {
+      return /*#__PURE__*/(
+        React.createElement("section", { id: "skills" }, /*#__PURE__*/
+          React.createElement("div", { className: "skills-container" }, /*#__PURE__*/
+            React.createElement("div", { className: "heading" }, /*#__PURE__*/
+              React.createElement("h3", { className: "title" }, "Technical Skills"), /*#__PURE__*/
+              React.createElement("p", { className: "separator" }), /*#__PURE__*/
+              React.createElement("p", { className: "subtitle" }, "Technologies and tools I work with to build modern, scalable applications")), /*#__PURE__*/
+
+            React.createElement("div", { className: "skills-grid" }, /*#__PURE__*/
+              React.createElement("div", { className: "skill-category" }, /*#__PURE__*/
+                React.createElement("h4", null, "Languages"), /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "HTML5, CSS3, JavaScript"), /*#__PURE__*/
+                  React.createElement("li", null, "Python, PHP, Java"), /*#__PURE__*/
+                  React.createElement("li", null, "JSON, XML"))), /*#__PURE__*/
+
+              React.createElement("div", { className: "skill-category" }, /*#__PURE__*/
+                React.createElement("h4", null, "Frameworks \u0026 Libraries"), /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "React.js, Django, Flask, FastAPI"), /*#__PURE__*/
+                  React.createElement("li", null, "Bootstrap, Tailwind CSS"), /*#__PURE__*/
+                  React.createElement("li", null, "Material UI, Ant Design"), /*#__PURE__*/
+                  React.createElement("li", null, "jQuery, Three.js, WordPress"))), /*#__PURE__*/
+
+              React.createElement("div", { className: "skill-category" }, /*#__PURE__*/
+                React.createElement("h4", null, "GIS Tools"), /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "Leaflet, OpenLayers"), /*#__PURE__*/
+                  React.createElement("li", null, "GeoServer, PostGIS"))), /*#__PURE__*/
+
+              React.createElement("div", { className: "skill-category" }, /*#__PURE__*/
+                React.createElement("h4", null, "Databases"), /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "PostgreSQL, MySQL"), /*#__PURE__*/
+                  React.createElement("li", null, "MongoDB, Firebase"))), /*#__PURE__*/
+
+              React.createElement("div", { className: "skill-category" }, /*#__PURE__*/
+                React.createElement("h4", null, "AI \u0026 Automation"), /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "LangChain, Gemini API"), /*#__PURE__*/
+                  React.createElement("li", null, "Docker, N8N, TensorFlow"), /*#__PURE__*/
+                  React.createElement("li", null, "PyAutoGUI, OpenCV"))), /*#__PURE__*/
+
+              React.createElement("div", { className: "skill-category" }, /*#__PURE__*/
+                React.createElement("h4", null, "Design \u0026 Tools"), /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "Figma, PowerPoint"), /*#__PURE__*/
+                  React.createElement("li", null, "Git, Google Apps Script"), /*#__PURE__*/
+                  React.createElement("li", null, "Selenium, Pandas, NumPy")))))))
+    };
+
+
+    /***********************
+      Experience Component
+     ***********************/
+
+    const Experience = props => {
+      return /*#__PURE__*/(
+        React.createElement("section", { id: "experience" }, /*#__PURE__*/
+          React.createElement("div", { className: "experience-container" }, /*#__PURE__*/
+            React.createElement("div", { className: "heading" }, /*#__PURE__*/
+              React.createElement("h3", { className: "title" }, "Professional Experience"), /*#__PURE__*/
+              React.createElement("p", { className: "separator" }), /*#__PURE__*/
+              React.createElement("p", { className: "subtitle" }, "My journey building solutions for leading organizations")), /*#__PURE__*/
+
+            React.createElement("div", { className: "experience-item" }, /*#__PURE__*/
+              React.createElement("div", { className: "job-title" }, "Software Developer"), /*#__PURE__*/
+              React.createElement("div", { className: "company" }, "Bhugol GIS Private Limited, Mumbai"), /*#__PURE__*/
+              React.createElement("div", { className: "duration" }, "Nov 2024 – Present"), /*#__PURE__*/
+              React.createElement("div", { className: "description" }, /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "Developed scalable web applications and GIS-integrated dashboards using React, Django, and PostgreSQL"), /*#__PURE__*/
+                  React.createElement("li", null, "Integrated Leaflet, OpenLayers, and GeoServer for spatial data visualization in smart city solutions"), /*#__PURE__*/
+                  React.createElement("li", null, "Built AI prototypes using LangChain, Gemini API, Docker, and N8N to automate workflows")))), /*#__PURE__*/
+
+            React.createElement("div", { className: "experience-item" }, /*#__PURE__*/
+              React.createElement("div", { className: "job-title" }, "Prompt Engineer – LLM Training \u0026 AI Automation"), /*#__PURE__*/
+              React.createElement("div", { className: "company" }, "Outlier (US-based AI Company) — Remote"), /*#__PURE__*/
+              React.createElement("div", { className: "duration" }, "Jan 2025 – Present"), /*#__PURE__*/
+              React.createElement("div", { className: "description" }, /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "Developed advanced prompt engineering techniques to train and fine-tune large language models"), /*#__PURE__*/
+                  React.createElement("li", null, "Contributed to hackathon-winning AI projects with Dockerized pipelines and N8N workflows")))), /*#__PURE__*/
+
+            React.createElement("div", { className: "experience-item" }, /*#__PURE__*/
+              React.createElement("div", { className: "job-title" }, "Google Apps Script Engineer"), /*#__PURE__*/
+              React.createElement("div", { className: "company" }, "Design Horse, Mumbai"), /*#__PURE__*/
+              React.createElement("div", { className: "duration" }, "June 2024 – October 2024"), /*#__PURE__*/
+              React.createElement("div", { className: "description" }, /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "Automated business workflows and reporting in Google Workspace using Apps Script")))), /*#__PURE__*/
+
+            React.createElement("div", { className: "experience-item" }, /*#__PURE__*/
+              React.createElement("div", { className: "job-title" }, "WordPress Website Developer (Freelance)"), /*#__PURE__*/
+              React.createElement("div", { className: "company" }, "Satguru Infocom Pvt. Ltd."), /*#__PURE__*/
+              React.createElement("div", { className: "duration" }, "May 2024 – June 2024"), /*#__PURE__*/
+              React.createElement("div", { className: "description" }, /*#__PURE__*/
+                React.createElement("ul", null, /*#__PURE__*/
+                  React.createElement("li", null, "Customized responsive WordPress websites with SEO optimization and plugin integration")))), /*#__PURE__*/
+
+            React.createElement("div", { className: "clients-highlight" }, /*#__PURE__*/
+              React.createElement("h4", null, "🌟 Key Clients \u0026 Projects"), /*#__PURE__*/
+              React.createElement("p", null, "MMRCL (Mumbai Metro Rail Corporation) • Nashik Smart City • GRAM ESMS Metro Line 4/4A • Wayfinder App \u0026 Dashboard • Asset Management Systems")))))
     };
 
 
@@ -1980,7 +2321,7 @@
 
             React.createElement("div", { className: "projects-wrapper" }, /*#__PURE__*/
 
-React.createElement(Project, {
+              React.createElement(Project, {
                 title: "360° Panorama View",
                 img: 'https://raw.githubusercontent.com/ElonMuskji/Portfolio-img/da69af814dae6a338d7528fcb6447f3a5dd99ddd/new34.png',
                 // tech: "js css react node",
@@ -1997,7 +2338,7 @@ React.createElement(Project, {
 
 
 
-React.createElement(Project, {
+              React.createElement(Project, {
                 title: "Chat with Database using Gemini, LangChain & PostgreSQL",
                 img: 'https://raw.githubusercontent.com/ElonMuskji/Portfolio-img/refs/heads/main/33new.png',
                 // tech: "js css react node",
@@ -2014,7 +2355,7 @@ React.createElement(Project, {
 
 
 
-React.createElement(Project, {
+              React.createElement(Project, {
                 title: "Asset Management System for Amiand IT",
                 img: 'https://raw.githubusercontent.com/ElonMuskji/Portfolio-img/refs/heads/main/31.png',
                 // tech: "js css react node",
@@ -2031,7 +2372,7 @@ React.createElement(Project, {
 
 
 
-React.createElement(Project, {
+              React.createElement(Project, {
                 title: "Nashik Smart City Geoportal",
                 img: 'https://raw.githubusercontent.com/ElonMuskji/Portfolio-img/refs/heads/main/30.png',
                 // tech: "js css react node",
@@ -2118,7 +2459,7 @@ React.createElement(Project, {
 
 
 
-            React.createElement(Project, {
+              React.createElement(Project, {
                 title: "MMRCL Line 11 PMIS & Geoportal",
                 img: 'https://raw.githubusercontent.com/ElonMuskji/Portfolio-img/refs/heads/main/32new.png',
                 // tech: "js css react node",
@@ -2543,6 +2884,8 @@ React.createElement(Project, {
             React.createElement(Nav, { toggleMenu: this.toggleMenu, showMenu: this.state.menuState }), /*#__PURE__*/
             React.createElement(Header, null), /*#__PURE__*/
             React.createElement(About, null), /*#__PURE__*/
+            React.createElement(Skills, null), /*#__PURE__*/
+            React.createElement(Experience, null), /*#__PURE__*/
             React.createElement(Projects, null), /*#__PURE__*/
             React.createElement(Contact, null), /*#__PURE__*/
             React.createElement(Footer, null)));
